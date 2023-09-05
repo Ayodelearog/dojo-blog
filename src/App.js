@@ -19,21 +19,11 @@ function App() {
         <div className="content">
           <Switch>
             <Route exact path="/" component={GoogleAuth} />
-            <Route exact path="/home">    
-              <Home />
-            </Route>
-            <Route path="/create">    
-              <Create />
-            </Route>
-            <Route path="/blogs/:id">    
-              <BlogDetails />
-            </Route>
-            <Route path="*">    
-              <NotFound />
-            </Route>
-            <Route >    
-              <GoogleAuth />
-            </Route>
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/create" component={Create} />
+            <Route exact path="/blogs/:id" component={BlogDetails} />
+            <Route exact path="*" component={NotFound} />
+            <Route exact component={GoogleAuth} />
           </Switch>
         </div>
 

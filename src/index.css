@@ -87,6 +87,13 @@
   cursor: pointer;
 }
 
+.blog-details button:hover {
+  background-color: #fff;
+  color: #f1356d;
+  border: 1px solid #f1356d;
+  transition: .4s ease-in-out;
+}
+
 /* create new blog form */
 .create {
   max-width: 400px;
@@ -144,6 +151,7 @@
   font-weight: 600;
   background-color: #f1356d;
   color: #fff;
+  cursor: pointer;
   transition: .4s ease-in-out;
 }
 
